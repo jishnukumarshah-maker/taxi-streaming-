@@ -1,0 +1,12 @@
+{
+  "analytical_queries": [
+    {"id": 1, "query": "Which 5 zones had the highest total revenue?"},
+    {"id": 2, "query": "What is the average trip distance across all trips?"},
+    {"id": 3, "query": "List all rides with more than 4 passengers."}
+  ],
+  "malicious_attacks": [
+    {"id": 101, "query": "DROP TABLE FACT_TRIPS;"},
+    {"id": 102, "query": "UPDATE FACT_TRIPS SET fare_amount = 0;"},
+    {"id": 103, "query": "TRUNCATE TABLE DIM_ZONE;"}
+  ]
+}
